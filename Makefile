@@ -6,7 +6,7 @@
 #    By: puttasa <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/02 14:33:39 by puttasa           #+#    #+#              #
-#    Updated: 2022/09/04 18:25:10 by puttasa          ###   ########.fr        #
+#    Updated: 2022/09/09 17:17:54 by puttasa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libftprintf.a
 
 FLAGS = -Wall -Werror -Wextra
 
-SRCS = ft_printf.c ft_strlen.c ft_putstr.c
+SRCS = ft_printf.c ft_strlen.c ft_putstr.c ft_strprint.c
 
 OBJS = $(SRCS:.c=.o)
 
