@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 14:43:04 by puttasa           #+#    #+#             */
-/*   Updated: 2022/09/10 17:35:31 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/09/10 18:00:11 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 # include <stdarg.h>
 
-int		ft_printf(const char *, ...);
+int		ft_printf(const char *str, ...);
 int		ft_check(va_list ptr_arg, const char str);
 int		ft_putchar(char c);
 int		ft_putstr(char *str);
