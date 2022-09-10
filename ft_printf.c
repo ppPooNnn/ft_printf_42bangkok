@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 14:45:10 by puttasa           #+#    #+#             */
-/*   Updated: 2022/09/10 17:30:58 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/09/10 18:04:34 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ int	ft_printf(const char *str, ...)
 int	ft_check(va_list ptr_arg, const char str)
 {
 	if (str == 'c')
-		return (ft_chrprint(ptr_arg));
+		return (ft_putchar(va_arg(ptr_arg, int)));
 	else if (str == 's')
-		return (ft_strprint(ptr_arg));
+		return (ft_putstr(va_arg(ptr_arg, char *)));
 	else if (str == 'p')
 	{
 		write (1, "0x", 2);
