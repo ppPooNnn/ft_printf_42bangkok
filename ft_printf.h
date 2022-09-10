@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 14:43:04 by puttasa           #+#    #+#             */
-/*   Updated: 2022/09/10 11:09:21 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/09/10 17:12:27 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int		ft_chrprint(va_list ptr_arg);
 int		ft_strprint(va_list ptr_arg);
 int		ft_nbrprint(int nb);
 int		ft_unsigned_print(unsigned int nb);
+int		ft_lowhex_print(unsigned int n);
+int		ft_uphex_print(unsigned int n);
 size_t	ft_strlen(const char *str);
 
 #endif
