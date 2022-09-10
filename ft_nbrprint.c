@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_nbrprint.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 14:43:04 by puttasa           #+#    #+#             */
-/*   Updated: 2022/09/10 10:47:09 by puttasa          ###   ########.fr       */
+/*   Created: 2022/09/10 10:27:00 by puttasa           #+#    #+#             */
+/*   Updated: 2022/09/10 10:55:02 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdarg.h>
+int	ft_nbrprint(int nb)
+{
+	int	len;
 
-int		ft_printf(const char *, ...);
-int		ft_check(va_list ptr_arg, const char str);
-int		ft_putchar(char c);
-int		ft_putstr(char *str);
-int		ft_chrprint(va_list ptr_arg);
-int		ft_strprint(va_list ptr_arg);
-int		ft_nbrprint(int nb);
-size_t	ft_strlen(const char *str);
-
-#endif
+	len = 0;
+	if (nb == -2147483648)
+	{
+		return (write(1, "-2147483648", 11));
+	}
+	if (nb < 0)
+	{
+		len += ft_putchar('-');
+		nb = -nb;
+	}
+	if (nb / 10)
+		len += ft_nbrprint(nb / 10);
+	len += ft_putchar(nb % 10 + '0');
+	return (len);
+}

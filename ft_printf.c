@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 14:45:10 by puttasa           #+#    #+#             */
-/*   Updated: 2022/09/09 17:36:07 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/09/10 10:51:15 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,17 +40,17 @@ int	ft_check(va_list ptr_arg, const char str)
 		return (ft_chrprint(ptr_arg));
 	else if (str == 's')
 		return (ft_strprint(ptr_arg));
-/*	else if (*str == 'p')
-		return (ft_putptr(ptr_arg));
-	else if (*str == 'd')
-		return (ft_putnbr(ptr_arg));
-	else if (*str == 'i')
-		return (ft_putint(ptr_arg));
-	else if (*str == 'u')
+//	else if (str == 'p')
+//		return (ft_ptrprint(ptr_arg));
+	else if (str == 'd')
+		return (ft_nbrprint(va_arg(ptr_arg, int)));
+	else if (str == 'i')
+		return (ft_nbrprint(va_arg(ptr_arg, int)));
+/*	else if (str == 'u')
 		return (ft_put_unsigned_nbr(ptr_arg));
-	else if (*str == 'x')
+	else if (str == 'x')
 		return (ft_put_lowhex(ptr_arg));
-	else if (*str == 'X')
+	else if (str == 'X')
 		return (ft_put_uphex(ptr_arg));		*/
 	else if (str == '%')
 		return (ft_putchar('%'));
