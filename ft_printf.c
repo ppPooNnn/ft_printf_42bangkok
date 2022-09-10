@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 14:45:10 by puttasa           #+#    #+#             */
-/*   Updated: 2022/09/10 10:51:15 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/09/10 11:16:10 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,9 @@ int	ft_check(va_list ptr_arg, const char str)
 		return (ft_nbrprint(va_arg(ptr_arg, int)));
 	else if (str == 'i')
 		return (ft_nbrprint(va_arg(ptr_arg, int)));
-/*	else if (str == 'u')
-		return (ft_put_unsigned_nbr(ptr_arg));
-	else if (str == 'x')
+	else if (str == 'u')
+		return (ft_unsigned_print(va_arg(ptr_arg, unsigned int)));
+/*	else if (str == 'x')
 		return (ft_put_lowhex(ptr_arg));
 	else if (str == 'X')
 		return (ft_put_uphex(ptr_arg));		*/
