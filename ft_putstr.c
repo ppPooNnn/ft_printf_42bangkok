@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/04 16:05:55 by puttasa           #+#    #+#             */
-/*   Updated: 2022/09/10 18:12:13 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/09/11 23:10:04 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ int	ft_putstr(char *str)
 	int	len;
 
 	len = 0;
-
 	if (str == NULL)
 	{
 		len += ft_putstr("(null)");
