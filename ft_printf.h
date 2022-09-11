@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 14:43:04 by puttasa           #+#    #+#             */
-/*   Updated: 2022/09/10 18:00:11 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/09/11 09:33:23 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,10 @@ int		ft_printf(const char *str, ...);
 int		ft_check(va_list ptr_arg, const char str);
 int		ft_putchar(char c);
 int		ft_putstr(char *str);
-int		ft_chrprint(va_list ptr_arg);
-int		ft_strprint(va_list ptr_arg);
 int		ft_nbrprint(int nb);
 int		ft_unsigned_print(unsigned int nb);
 int		ft_lowhex_print(unsigned int n);
 int		ft_uphex_print(unsigned int n);
 int		ft_ptrprint(unsigned long n);
-size_t	ft_strlen(const char *str);
 
 #endif
